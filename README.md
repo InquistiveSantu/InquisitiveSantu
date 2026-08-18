@@ -37,10 +37,6 @@ I enjoy building hands-on cloud infrastructure, automating deployments, and impl
   <img src="assets/devops.gif" alt="DevOps animation" width="850" />
 </p>
 
-<p align="center">
-  <img src="assets/docker.gif" alt="Docker animation" width="400" />
-</p>
-
 | Category | Tools & Technologies |
 |----------|----------------------|
 | **Cloud Platform** | Microsoft Azure, Azure Networking, Hub & Spoke Architecture, Azure Landing Zones |
@@ -118,41 +114,22 @@ Topics I'm reading about and experimenting with in my own time:
 
 ---
 
+<p align="center">
+  <img src="assets/docker.gif" alt="Docker animation" width="300" />
+</p>
+
+---
+
 ## 🚀 Featured Projects
 
 > All projects focus on real-world Azure + Terraform + DevSecOps patterns.
 
 | Project | Description |
 |---------|-------------|
-| [**terraform-devsecops-validation-pipeline**](https://github.com/InquisitiveSantu/terraform-devsecops-validation-pipeline) | DevSecOps pipeline integrating Checkov, TFSec, TFLint, Gitleaks, and Infracost for automated Terraform security validation |
-| [**azure-terraform-devsecops-landing-zone**](https://github.com/InquisitiveSantu/azure-terraform-devsecops-landing-zone) | Azure Landing Zone built with Terraform, incorporating DevSecOps controls, RBAC, and hub-spoke networking |
 | [**terraform-azure-landing-zone**](https://github.com/InquisitiveSantu/terraform-azure-landing-zone) | Modular Terraform codebase for deploying an Azure Landing Zone with hub-spoke architecture |
-| [**terraform-azure-mini-landing-zone**](https://github.com/InquisitiveSantu/terraform-azure-mini-landing-zone) | Lightweight Terraform setup for bootstrapping a basic Azure Landing Zone environment |
 | [**docker-azure-vm-deployment**](https://github.com/InquisitiveSantu/docker-azure-vm-deployment) | Azure VM deployment using Docker and automation scripts |
+| [**terraform-devsecops-validation-pipeline**](https://github.com/InquisitiveSantu/terraform-devsecops-validation-pipeline) | DevSecOps pipeline integrating Checkov, TFSec, TFLint, Gitleaks, and Infracost for automated Terraform security validation |
 | [**GitHub-Action-pipeline**](https://github.com/InquisitiveSantu/GitHub-Action-pipeline) | GitHub Actions CI/CD pipeline for infrastructure and application delivery |
-
----
-
-## 📊 GitHub Statistics
-
-<p align="center">
-  <img height="180em"
-    src="https://github-readme-stats.vercel.app/api?username=InquisitiveSantu&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=0078D4&icon_color=0078D4&text_color=C9D1D9"
-    alt="InquisitiveSantu's GitHub Stats"
-  />
-  &nbsp;
-  <img height="180em"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=InquisitiveSantu&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=0078D4&text_color=C9D1D9&langs_count=8"
-    alt="Top Languages"
-  />
-</p>
-
-<p align="center">
-  <img
-    src="https://streak-stats.demolab.com?user=InquisitiveSantu&theme=tokyonight&hide_border=true&background=0D1117&ring=0078D4&fire=0078D4&currStreakLabel=0078D4"
-    alt="GitHub Streak"
-  />
-</p>
 
 ---
 
@@ -162,15 +139,15 @@ Topics I'm reading about and experimenting with in my own time:
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://raw.githubusercontent.com/InquisitiveSantu/InquisitiveSantu/output/github-contribution-grid-snake-dark.svg"
+      srcset="https://raw.githubusercontent.com/InquistiveSantu/InquisitiveSantu/output/github-contribution-grid-snake-dark.svg"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://raw.githubusercontent.com/InquisitiveSantu/InquisitiveSantu/output/github-contribution-grid-snake.svg"
+      srcset="https://raw.githubusercontent.com/InquistiveSantu/InquisitiveSantu/output/github-contribution-grid-snake.svg"
     />
     <img
       alt="GitHub Contribution Snake"
-      src="https://raw.githubusercontent.com/InquisitiveSantu/InquisitiveSantu/output/github-contribution-grid-snake.svg"
+      src="https://raw.githubusercontent.com/InquistiveSantu/InquisitiveSantu/output/github-contribution-grid-snake.svg"
     />
   </picture>
 </p>
