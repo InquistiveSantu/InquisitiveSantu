@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 162" width="820" height="162"
+     role="img" aria-label="DevOps workflow: Developer code flows through Git version control, CI/CD automation, Terraform infrastructure as code, Azure cloud platform, Docker containers, and Azure Monitor observability. Conceptual overview.">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg-g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D1627"/>
+      <stop offset="100%" stop-color="#08101C"/>
+    </linearGradient>
+    <!-- Dim node fill gradient -->
+    <radialGradient id="nd" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#19233A"/>
+      <stop offset="100%" stop-color="#0D1525"/>
+    </radialGradient>
+    <!-- Active/lit node fill gradient -->
+    <radialGradient id="na" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0D4080"/>
+      <stop offset="100%" stop-color="#051D45"/>
+    </radialGradient>
+    <!-- Glow blur filter -->
+    <filter id="gf" x="-55%" y="-55%" width="210%" height="210%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      /* Text */
+      .ttl{font-family:'Segoe UI',Arial,sans-serif;font-size:10.5px;fill:#58A6FF;text-anchor:middle;letter-spacing:2px;}
+      .lbl{font-family:'Segoe UI',Arial,sans-serif;font-size:11.5px;font-weight:700;fill:#E6EDF3;text-anchor:middle;}
+      .sub{font-family:'Segoe UI',Arial,sans-serif;font-size:9px;fill:#8B949E;text-anchor:middle;}
+      /* Node layers */
+      .nb{fill:url(#nd);stroke:#253045;stroke-width:1.5;}
+      .nao{fill:url(#na);stroke:#0078D4;stroke-width:2;opacity:0;}
+      .ngl{fill:#1470C8;opacity:0;}
+      /* Connection lines */
+      .cl{fill:none;stroke:#253045;stroke-width:1.5;stroke-linecap:round;}
+      /* Arrowheads (static) */
+      .ah{fill:#2F3D55;}
+      /* Data dots */
+      .dt{fill:#0078D4;opacity:0;}
+      /* Icon strokes */
+      .ic{stroke:#CDD5E0;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+      .icd{stroke:#CDD5E0;stroke-width:2;fill:#CDD5E0;}
+
+      /* ── KEYFRAMES ── */
+      @keyframes na-on{0%,14%{opacity:1;}22%{opacity:0;}100%{opacity:0;}}
+      @keyframes ng-on{0%,14%{opacity:0.55;}22%{opacity:0;}100%{opacity:0;}}
+      @keyframes cl-on{0%,16%{stroke:#0A62A8;stroke-width:2;}24%{stroke:#253045;stroke-width:1.5;}100%{stroke:#253045;stroke-width:1.5;}}
+      @keyframes dt-go{
+        0%  {transform:translateX(0);  opacity:0;}
+        3%  {opacity:1;}
+        13% {transform:translateX(53px);opacity:1;}
+        16% {transform:translateX(53px);opacity:0;}
+        100%{transform:translateX(0);  opacity:0;}
+      }
+
+      /* ── NODE TIMINGS (7s cycle, 1s spacing) ── */
+      .nao1{animation:na-on 7s 0s infinite;}
+      .nao2{animation:na-on 7s 1s infinite;}
+      .nao3{animation:na-on 7s 2s infinite;}
+      .nao4{animation:na-on 7s 3s infinite;}
+      .nao5{animation:na-on 7s 4s infinite;}
+      .nao6{animation:na-on 7s 5s infinite;}
+      .nao7{animation:na-on 7s 6s infinite;}
+      .ngl1{animation:ng-on 7s 0s infinite;}
+      .ngl2{animation:ng-on 7s 1s infinite;}
+      .ngl3{animation:ng-on 7s 2s infinite;}
+      .ngl4{animation:ng-on 7s 3s infinite;}
+      .ngl5{animation:ng-on 7s 4s infinite;}
+      .ngl6{animation:ng-on 7s 5s infinite;}
+      .ngl7{animation:ng-on 7s 6s infinite;}
+
+      /* ── CONNECTION LINE TIMINGS ── */
+      .cl1{animation:cl-on 7s 0s infinite;}
+      .cl2{animation:cl-on 7s 1s infinite;}
+      .cl3{animation:cl-on 7s 2s infinite;}
+      .cl4{animation:cl-on 7s 3s infinite;}
+      .cl5{animation:cl-on 7s 4s infinite;}
+      .cl6{animation:cl-on 7s 5s infinite;}
+
+      /* ── DOT TIMINGS (2 staggered dots per connection) ── */
+      .d1a{animation:dt-go 7s 0.0s infinite;}
+      .d1b{animation:dt-go 7s 0.5s infinite;}
+      .d2a{animation:dt-go 7s 1.0s infinite;}
+      .d2b{animation:dt-go 7s 1.5s infinite;}
+      .d3a{animation:dt-go 7s 2.0s infinite;}
+      .d3b{animation:dt-go 7s 2.5s infinite;}
+      .d4a{animation:dt-go 7s 3.0s infinite;}
+      .d4b{animation:dt-go 7s 3.5s infinite;}
+      .d5a{animation:dt-go 7s 4.0s infinite;}
+      .d5b{animation:dt-go 7s 4.5s infinite;}
+      .d6a{animation:dt-go 7s 5.0s infinite;}
+      .d6b{animation:dt-go 7s 5.5s infinite;}
+    </style>
+  </defs>
+
+  <!-- ── BACKGROUND ── -->
+  <rect width="820" height="162" fill="url(#bg-g)" rx="12"/>
+  <rect x="1" y="1" width="818" height="160" fill="none" stroke="#1C2A40" stroke-width="1" rx="11"/>
+
+  <!-- ── TITLE ── -->
+  <text class="ttl" x="410" y="16">DEVOPS WORKFLOW  ·  CONCEPTUAL OVERVIEW</text>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- Node centers (cy=87, r=34):                           -->
+  <!--  n1=48  n2=169  n3=290  n4=411  n5=532  n6=653  n7=774 -->
+  <!-- Connection right edges: 82,203,324,445,566,687        -->
+  <!-- Connection left edges:  135,256,377,498,619,740       -->
+  <!-- Connection length: 53px each                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+
+  <!-- ── CONNECTION LINES ── -->
+  <line class="cl cl1" x1="82"  y1="87" x2="130" y2="87"/>
+  <line class="cl cl2" x1="203" y1="87" x2="251" y2="87"/>
+  <line class="cl cl3" x1="324" y1="87" x2="372" y2="87"/>
+  <line class="cl cl4" x1="445" y1="87" x2="493" y2="87"/>
+  <line class="cl cl5" x1="566" y1="87" x2="614" y2="87"/>
+  <line class="cl cl6" x1="687" y1="87" x2="735" y2="87"/>
+
+  <!-- ── ARROWHEADS (static, at connection end) ── -->
+  <polygon class="ah" points="130,83 135,87 130,91"/>
+  <polygon class="ah" points="251,83 256,87 251,91"/>
+  <polygon class="ah" points="372,83 377,87 372,91"/>
+  <polygon class="ah" points="493,83 498,87 493,91"/>
+  <polygon class="ah" points="614,83 619,87 614,91"/>
+  <polygon class="ah" points="735,83 740,87 735,91"/>
+
+  <!-- ── TRAVELING DATA DOTS ── -->
+  <!-- c1: starts at x=82, travels +53px → x=135 -->
+  <circle class="dt d1a" cx="82" cy="87" r="4"/>
+  <circle class="dt d1b" cx="82" cy="87" r="3.5"/>
+  <!-- c2: starts at x=203 -->
+  <circle class="dt d2a" cx="203" cy="87" r="4"/>
+  <circle class="dt d2b" cx="203" cy="87" r="3.5"/>
+  <!-- c3: starts at x=324 -->
+  <circle class="dt d3a" cx="324" cy="87" r="4"/>
+  <circle class="dt d3b" cx="324" cy="87" r="3.5"/>
+  <!-- c4: starts at x=445 -->
+  <circle class="dt d4a" cx="445" cy="87" r="4"/>
+  <circle class="dt d4b" cx="445" cy="87" r="3.5"/>
+  <!-- c5: starts at x=566 -->
+  <circle class="dt d5a" cx="566" cy="87" r="4"/>
+  <circle class="dt d5b" cx="566" cy="87" r="3.5"/>
+  <!-- c6: starts at x=687 -->
+  <circle class="dt d6a" cx="687" cy="87" r="4"/>
+  <circle class="dt d6b" cx="687" cy="87" r="3.5"/>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- NODE 1 — Code  (cx=48 cy=87)                           -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle class="ngl ngl1" cx="48" cy="87" r="42" filter="url(#gf)"/>
+  <circle class="nb"       cx="48" cy="87" r="34"/>
+  <circle class="nao nao1" cx="48" cy="87" r="34"/>
+  <!-- Icon: </> code brackets + slash -->
+  <polyline class="ic" points="35,80 29,87 35,94"/>
+  <polyline class="ic" points="61,80 67,87 61,94"/>
+  <line class="ic" x1="55" y1="77" x2="41" y2="97"/>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- NODE 2 — Git  (cx=169 cy=87)                           -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle class="ngl ngl2" cx="169" cy="87" r="42" filter="url(#gf)"/>
+  <circle class="nb"       cx="169" cy="87" r="34"/>
+  <circle class="nao nao2" cx="169" cy="87" r="34"/>
+  <!-- Icon: git branch fork -->
+  <line   class="ic" x1="169" y1="101" x2="169" y2="84"/>
+  <line   class="ic" x1="169" y1="84"  x2="157" y2="73"/>
+  <line   class="ic" x1="169" y1="84"  x2="181" y2="73"/>
+  <circle class="icd" cx="157" cy="73" r="4"/>
+  <circle class="icd" cx="181" cy="73" r="4"/>
+  <circle class="icd" cx="169" cy="101" r="4"/>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- NODE 3 — CI/CD  (cx=290 cy=87)                         -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle class="ngl ngl3" cx="290" cy="87" r="42" filter="url(#gf)"/>
+  <circle class="nb"       cx="290" cy="87" r="34"/>
+  <circle class="nao nao3" cx="290" cy="87" r="34"/>
+  <!-- Icon: two circular refresh arrows (CI/CD cycle) -->
+  <path class="ic" d="M275,80 A17,17,0,0,1,305,80"/>
+  <polygon fill="#CDD5E0" stroke="none" points="305,80 299,71 311,73"/>
+  <path class="ic" d="M305,94 A17,17,0,0,1,275,94"/>
+  <polygon fill="#CDD5E0" stroke="none" points="275,94 281,103 269,101"/>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- NODE 4 — Terraform  (cx=411 cy=87)                     -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle class="ngl ngl4" cx="411" cy="87" r="42" filter="url(#gf)"/>
+  <circle class="nb"       cx="411" cy="87" r="34"/>
+  <circle class="nao nao4" cx="411" cy="87" r="34"/>
+  <!-- Icon: rhombus (IaC/Terraform symbol) -->
+  <polygon class="ic"  points="411,69 429,87 411,105 393,87"/>
+  <polygon fill="#7B42BC" stroke="none" opacity="0.75" points="411,77 419,87 411,97 403,87"/>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- NODE 5 — Azure  (cx=532 cy=87)                         -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle class="ngl ngl5" cx="532" cy="87" r="42" filter="url(#gf)"/>
+  <circle class="nb"       cx="532" cy="87" r="34"/>
+  <circle class="nao nao5" cx="532" cy="87" r="34"/>
+  <!-- Icon: simplified cloud shape -->
+  <path class="ic" d="M518,93 Q513,84 520,80 Q521,68 533,68 Q543,68 545,76 Q553,76 553,84 Q553,93 545,93 Z"/>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- NODE 6 — Docker  (cx=653 cy=87)                        -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle class="ngl ngl6" cx="653" cy="87" r="42" filter="url(#gf)"/>
+  <circle class="nb"       cx="653" cy="87" r="34"/>
+  <circle class="nao nao6" cx="653" cy="87" r="34"/>
+  <!-- Icon: three stacked container bars -->
+  <rect class="ic" x="637" y="73" width="32" height="9"  rx="2"/>
+  <rect class="ic" x="637" y="84" width="32" height="9"  rx="2"/>
+  <rect class="ic" x="637" y="95" width="32" height="9"  rx="2"/>
+
+  <!-- ════════════════════════════════════════════════════════ -->
+  <!-- NODE 7 — Monitor  (cx=774 cy=87)                       -->
+  <!-- ════════════════════════════════════════════════════════ -->
+  <circle class="ngl ngl7" cx="774" cy="87" r="42" filter="url(#gf)"/>
+  <circle class="nb"       cx="774" cy="87" r="34"/>
+  <circle class="nao nao7" cx="774" cy="87" r="34"/>
+  <!-- Icon: monitor screen + pulse wave inside + stand -->
+  <rect class="ic" x="756" y="71" width="36" height="26" rx="3"/>
+  <polyline stroke="#0078D4" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+            points="760,84 766,76 772,88 778,76 784,84"/>
+  <line class="ic" x1="774" y1="97"  x2="774" y2="103"/>
+  <line class="ic" x1="766" y1="103" x2="782" y2="103"/>
+
+  <!-- ── LABELS ── -->
+  <text class="lbl" x="48"  y="133">Code</text>
+  <text class="lbl" x="169" y="133">Git</text>
+  <text class="lbl" x="290" y="133">CI/CD</text>
+  <text class="lbl" x="411" y="133">Terraform</text>
+  <text class="lbl" x="532" y="133">Azure</text>
+  <text class="lbl" x="653" y="133">Docker</text>
+  <text class="lbl" x="774" y="133">Monitor</text>
+
+  <!-- ── SUB-LABELS ── -->
+  <text class="sub" x="48"  y="146">Dev Env</text>
+  <text class="sub" x="169" y="146">Version Control</text>
+  <text class="sub" x="290" y="146">Automation</text>
+  <text class="sub" x="411" y="146">IaC</text>
+  <text class="sub" x="532" y="146">Cloud Platform</text>
+  <text class="sub" x="653" y="146">Containers</text>
+  <text class="sub" x="774" y="146">Observability</text>
+</svg>
