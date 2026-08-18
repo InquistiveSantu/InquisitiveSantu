@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 158" width="820" height="158" role="img" aria-label="DevSecOps pipeline stages: Git Push triggers Terraform Validation with TFLint and fmt, then Security Scans running Checkov TFSec TFLint Gitleaks TruffleHog and Semgrep, then Cost Check via Infracost, then Deployment to Azure">
+  <defs>
+    <style>
+      .lbl  { font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; font-weight: 700; fill: #E6EDF3; text-anchor: middle; dominant-baseline: middle; }
+      .sub  { font-family: 'Segoe UI', Arial, sans-serif; font-size: 9px;  fill: #8B949E; text-anchor: middle; dominant-baseline: middle; }
+      .tool { font-family: 'Segoe UI', Arial, sans-serif; font-size: 8.5px; fill: #58A6FF; text-anchor: middle; dominant-baseline: middle; }
+      .ttl  { font-family: 'Segoe UI', Arial, sans-serif; font-size: 10.5px; fill: #58A6FF; text-anchor: middle; letter-spacing: 1.5px; }
+      @keyframes stageOn {
+        0%,100% { fill: #161B22; stroke: #30363D; }
+        10%     { fill: #0A2540; stroke: #0078D4; }
+        20%     { fill: #161B22; stroke: #30363D; }
+      }
+      @keyframes lineOn {
+        0%,100% { stroke: #30363D; }
+        10%     { stroke: #0078D4; }
+        20%     { stroke: #30363D; }
+      }
+      @keyframes headOn {
+        0%,100% { fill: #30363D; }
+        10%     { fill: #0078D4; }
+        20%     { fill: #30363D; }
+      }
+      .s1 { animation: stageOn 4.5s 0.00s infinite; }
+      .s2 { animation: stageOn 4.5s 0.90s infinite; }
+      .s3 { animation: stageOn 4.5s 1.80s infinite; }
+      .s4 { animation: stageOn 4.5s 2.70s infinite; }
+      .s5 { animation: stageOn 4.5s 3.60s infinite; }
+      .l1 { animation: lineOn  4.5s 0.45s infinite; }
+      .l2 { animation: lineOn  4.5s 1.35s infinite; }
+      .l3 { animation: lineOn  4.5s 2.25s infinite; }
+      .l4 { animation: lineOn  4.5s 3.15s infinite; }
+      .p1 { animation: headOn  4.5s 0.45s infinite; }
+      .p2 { animation: headOn  4.5s 1.35s infinite; }
+      .p3 { animation: headOn  4.5s 2.25s infinite; }
+      .p4 { animation: headOn  4.5s 3.15s infinite; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="820" height="158" fill="#0D1117" rx="10"/>
+
+  <!-- Title -->
+  <text class="ttl" x="410" y="14">DEVSECOPS PIPELINE  ·  CONCEPTUAL OVERVIEW</text>
+
+  <!-- Stage positions: 5 nodes × 140px wide + 4 gaps × 24px = 700+96=796, pad 12 each side = 820 -->
+  <!-- s1: Git Push  x=12..152  center=82 -->
+  <rect class="s1" x="12" y="25" width="140" height="110" rx="8" stroke-width="1.5"/>
+  <text class="lbl" x="82" y="66">Git Push</text>
+  <text class="sub" x="82" y="84">Source Trigger</text>
+
+  <!-- Arrow 1: 152 → 176 -->
+  <line class="l1" x1="152" y1="80" x2="168" y2="80" stroke-width="2"/>
+  <polygon class="p1" points="168,75 176,80 168,85"/>
+
+  <!-- s2: Terraform Validate  x=176..316  center=246 -->
+  <rect class="s2" x="176" y="25" width="140" height="110" rx="8" stroke-width="1.5"/>
+  <text class="lbl" x="246" y="60">Terraform</text>
+  <text class="lbl" x="246" y="77">Validation</text>
+  <text class="sub" x="246" y="98">fmt · validate · TFLint</text>
+
+  <!-- Arrow 2: 316 → 340 -->
+  <line class="l2" x1="316" y1="80" x2="332" y2="80" stroke-width="2"/>
+  <polygon class="p2" points="332,75 340,80 332,85"/>
+
+  <!-- s3: Security Scans  x=340..480  center=410 -->
+  <rect class="s3" x="340" y="25" width="140" height="110" rx="8" stroke-width="1.5"/>
+  <text class="lbl" x="410" y="51">Security Scans</text>
+  <text class="tool" x="410" y="68">Checkov · TFSec · TFLint</text>
+  <text class="tool" x="410" y="83">Gitleaks · TruffleHog</text>
+  <text class="tool" x="410" y="98">Semgrep</text>
+
+  <!-- Arrow 3: 480 → 504 -->
+  <line class="l3" x1="480" y1="80" x2="496" y2="80" stroke-width="2"/>
+  <polygon class="p3" points="496,75 504,80 496,85"/>
+
+  <!-- s4: Cost Check  x=504..644  center=574 -->
+  <rect class="s4" x="504" y="25" width="140" height="110" rx="8" stroke-width="1.5"/>
+  <text class="lbl" x="574" y="66">Cost Check</text>
+  <text class="sub" x="574" y="84">Infracost · PR Delta</text>
+
+  <!-- Arrow 4: 644 → 668 -->
+  <line class="l4" x1="644" y1="80" x2="660" y2="80" stroke-width="2"/>
+  <polygon class="p4" points="660,75 668,80 660,85"/>
+
+  <!-- s5: Deploy  x=668..808  center=738 -->
+  <rect class="s5" x="668" y="25" width="140" height="110" rx="8" stroke-width="1.5"/>
+  <text class="lbl" x="738" y="66">Deploy</text>
+  <text class="sub" x="738" y="84">Azure · Approved</text>
+</svg>

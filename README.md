@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated typing introduction -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&color=0078D4&center=true&vCenter=true&width=700&lines=Hi+there%2C+I'm+Santu+Paira+%F0%9F%91%8B;DevOps+Engineer+%7C+Azure+%7C+Terraform;Docker+%7C+CI%2FCD+%7C+DevSecOps;Infrastructure+as+Code+with+Terraform)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1200&color=0078D4&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Santu+Paira+%F0%9F%91%8B;DevOps+Engineer+%7C+Azure+%7C+Terraform;Cloud+Infrastructure+%26+DevSecOps;Docker+%7C+CI%2FCD+%7C+GitHub+Actions)](https://git.io/typing-svg)
 
 <br/>
 
@@ -14,9 +14,9 @@
 
 ## 🧭 About Me
 
-I'm **Santu Paira**, a DevOps Engineer passionate about **Microsoft Azure**, **Infrastructure as Code with Terraform**, and **DevSecOps**. I enjoy building and automating cloud infrastructure — from **Hub & Spoke networking** and **Azure Landing Zones** to **CI/CD pipelines** that include security scanning at every stage.
+I'm **Santu Paira**, a DevOps Engineer focused on **Microsoft Azure**, **Terraform**, **CI/CD**, **Docker**, **Linux**, and **DevSecOps**.
 
-I'm hands-on with the tools and enjoy learning by doing — building real projects, writing Terraform modules, and wiring up pipelines that catch issues before they hit production.
+I enjoy building hands-on cloud infrastructure, automating deployments, and implementing security and validation practices across Infrastructure as Code workflows.
 
 - 🏗️ Working with **Azure Landing Zones** and Terraform modules
 - 🔐 Integrating security tools (Checkov, TFSec, Gitleaks) into CI/CD pipelines
@@ -33,12 +33,20 @@ I'm hands-on with the tools and enjoy learning by doing — building real projec
   <img src="https://skillicons.dev/icons?i=azure,terraform,docker,linux,bash,python,github&theme=dark&perline=7" alt="Cloud & DevOps Skills" />
 </p>
 
+<p align="center">
+  <img src="assets/devops.gif" alt="DevOps animation" width="850" />
+</p>
+
+<p align="center">
+  <img src="assets/docker.gif" alt="Docker animation" width="400" />
+</p>
+
 | Category | Tools & Technologies |
 |----------|----------------------|
 | **Cloud Platform** | Microsoft Azure, Azure Networking, Hub & Spoke Architecture, Azure Landing Zones |
 | **Identity & Access** | Azure RBAC |
 | **Observability** | Azure Monitor |
-| **IaC** | Terraform, Terraform Modules |
+| **Infrastructure as Code** | Terraform, Terraform Modules |
 | **CI/CD** | Azure DevOps Pipelines, GitHub Actions |
 | **Containers** | Docker |
 | **OS & Scripting** | Linux, Bash, Python |
@@ -47,7 +55,7 @@ I'm hands-on with the tools and enjoy learning by doing — building real projec
 
 ## 🔐 DevSecOps
 
-Shifting security **left** — validating infrastructure code before it ever reaches production.
+Shift-left security for Infrastructure as Code and CI/CD.
 
 <p align="center">
 
