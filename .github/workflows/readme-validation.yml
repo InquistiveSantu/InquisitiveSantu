@@ -1,0 +1,48 @@
+name: README Quality & Security Validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Validate README & Local Assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify README.md exists
+        run: |
+          if [ ! -f README.md ]; then
+            echo "❌ Error: README.md does not exist!"
+            exit 1
+          fi
+          echo "✅ README.md exists."
+
+      - name: Verify referenced local assets exist
+        run: |
+          echo "🔍 Checking local asset paths in README.md..."
+          grep -oE 'assets/[a-zA-Z0-9_.-]+' README.md | sort -u | while read -r asset; do
+            if [ ! -f "$asset" ]; then
+              echo "❌ Error: Local asset '$asset' referenced in README.md was not found on disk!"
+              exit 1
+            fi
+            echo "✅ Asset verified: $asset"
+          done
+
+      - name: Validate Markdown structure
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: 'README.md'
+
+      - name: Security Scan for Secret Leaks
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
